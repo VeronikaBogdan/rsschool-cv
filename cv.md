@@ -5,9 +5,10 @@
 **E-mail:** veron9399bogdan@gmail.com  
 **Telegram** @veron9399 
 ## **Information About Myself**
-I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study  in the 2nd course at this faculty.  
-Every week or every day I try to learn something new even in the summer. 
-
+I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty.  
+Every week or every day I try to learn something new even in the summer.  
+In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  
+And now I want to train more in order to be a full-fledged and competent part of the team in the future. 
 ## **Skills**
 + HTML&CSS
 + JS
