@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Roboto-Black; 
+    src: url('../fonts/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: Roboto-Bold; 
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-family: Roboto-Black;
+    font-size: 60px;
+    color:#fff;
+}
+
+h2{
+    font-family: Roboto-Medium;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: Roboto-Light;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    /* width: 620px; */
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    position: relative;
+    top: 100px;
+    z-index: 2;
+    display: flex;
+    background-color: #3FC600;
+    
+}
+
+main{
+    position:relative;
+    bottom: 150px;
+    display: flex;
+    z-index: 1;
+    /* margin-top: 300px; */
+}
+
+article:first-child, 
+aside:first-child {
+    padding-top: 270px;
+}
+
+.sidebar{
+    flex: 1;
+    background-color: #29282B;
+}
+.sidebar:first-child{
+    padding-top: 270px;
+}
+.sidebar > p {
+    color:cornsilk;
+}
