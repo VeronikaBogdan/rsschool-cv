@@ -11,16 +11,16 @@
 	src: url('../fonts/Roboto-Light.ttf');
 }
 @font-face {
+	font-family: Roboto-LightItalic;
+	src: url('../fonts/Roboto-LightItalic.ttf');
+}
+@font-face {
 	font-family: Roboto-Regular;
 	src: url('../fonts/Roboto-Regular.ttf');
 }
 @font-face {
 	font-family: Roboto-Medium;
 	src: url('../fonts/Roboto-Medium.ttf');
-}
-@font-face {
-	font-family: Roboto-Thin;
-	src: url('../fonts/Roboto-Thin.ttf');
 }
 
 
@@ -52,8 +52,7 @@ h3{
 	margin-top: 43px;
 }
 
-p, 
-pre {
+p {
 	font-family: Roboto-Light;
 	font-size: 20px;
 	line-height: 23px;
@@ -92,12 +91,20 @@ main{
 
 article {
 	flex: 4;
-	
 }
 
-pre{
+p#task {
+	font-family: Roboto-LightItalic;
+	border-left:#3FC600 solid 7px;
+	padding-left: 15px;
+}
+
+pre#code {
 	position: relative;
-	right: 193px;
+	/* right: 193px; */
+	max-width: 650px;
+	/* font-family: Roboto-Thin;
+	font-size: 15px; */
 }
 
 article:first-child, 
@@ -144,4 +151,15 @@ aside:first-child {
 
 p.dark {
 	margin-left: 45px;
+}
+
+footer ul#footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #4AC900;
+	font-family: Roboto-Regular;
+	font-size: 25px;
+	/* color: #F7FFEA; */
+	color:#fff;
 }

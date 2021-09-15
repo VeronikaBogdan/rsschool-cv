@@ -7,6 +7,8 @@
 	<title>CV Veronika Bogdan</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 </head>
 <body>
 	<header class="header container">
@@ -19,37 +21,42 @@
 	</header>
 	<!-- /.header -->
 	<main class="container">
-		<article>
-			<section>
+	<article>
+			<!-- <section> -->
 			  <h3>About Me</h3>
 				<p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
 				<p>Every week or every day I try to learn something new even in the summer.  </p>
 				<p>In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  </p>
 				<p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
-			</section>
-			<section>
+			<!-- </section> -->
+			<!-- <section> -->
 				<h3>Code Example</h3>
-				<pre>
-					function reverseWords(str) {
-						const arrWords = str.split(" "); 
-						
-						str = '';
-						let count = 1;
-						
-						for(let word of arrWords){
-							const arrLetters = word.split("").reverse().join("");
-							
-							if(count &lt; arrWords.length){    
-								str += arrLetters + " ";
-								count++;
-							} else {
-								str += arrLetters;
-							}
-						}					
-						return str;
-					}
+				<p id="task">
+					Complete the function that accepts a string parameter, and reverses each word in the string. <strong>All</strong> spaces in the string should be retained
+				</p>
+				<pre id="code">
+					<code class="javascript">
+function reverseWords(str) {
+	const arrWords = str.split(" "); 
+	
+	str = '';
+	let count = 1;
+	
+	for(let word of arrWords){
+		const arrLetters = word.split("").reverse().join("");
+		
+		if(count &lt; arrWords.length){    
+			str += arrLetters + " ";
+			count++;
+		} else {
+			str += arrLetters;
+		}
+	}					
+	return str;
+}
+					</code>
 				</pre>
-			</section>
+			<!-- </section> -->
 		</article>
 		<aside class="sidebar" style="flex: 2;">
 			<h3 class="dark__title">Contacts</h3>
@@ -61,7 +68,7 @@
 			</ul>
 			<h3 class="dark__title">Skills</h3>
 			<ul class="dark">
-				<li>HTML&CSS</li>
+				<li>HTML & CSS</li>
 				<li>JS</li>
 				<li>C++</li>
 				<li>Git</li>
@@ -73,5 +80,16 @@
 		</aside>
 		<!-- /.sidebar -->
 	</main>
+	<footer>
+		<ul id="footer" class="container">
+			<li>2021</li>
+			<li><a href="https://github.com/VeronikaBogdan">GitHub</a></li>
+			<li><a href="https://rs.school/js/"><img src="img/logo.svg" width="150" alt="photo: logo"></a></li>
+		</ul>
+	</footer>
+	<!-- /#footer -->
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
