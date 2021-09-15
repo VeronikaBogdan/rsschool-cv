@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Veronika Bogdan</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV Veronika Bogdan</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header container">
-        <!-- img -->
-        <h1>Veronika Bogdan</h1>
-        <!-- <nav></nav> -->
-    </header>
-    <!-- /.header -->
-    <main class="container">
-        <article style="flex: 3;">
-            <h2>About Me</h2>
-            <p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
-            <p>Every week or every day I try to learn something new even in the summer.  </p>
-            <p>In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  </p>
-            <p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
-            <h2>Code Example</h2>
-        </article>
-        <aside class="sidebar">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nostrum officia voluptas numquam cumque dignissimos ex quasi impedit eos doloribus a nesciunt culpa, eligendi cupiditate, ipsam libero doloremque debitis unde.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nostrum officia voluptas numquam cumque dignissimos ex quasi impedit eos doloribus a nesciunt culpa, eligendi cupiditate, ipsam libero doloremque debitis unde.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nostrum officia voluptas numquam cumque dignissimos ex quasi impedit eos doloribus a nesciunt culpa, eligendi cupiditate, ipsam libero doloremque debitis unde.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nostrum officia voluptas numquam cumque dignissimos ex quasi impedit eos doloribus a nesciunt culpa, eligendi cupiditate, ipsam libero doloremque debitis unde.</p>
-        </aside>
-        <!-- /.sidebar -->
-    </main>
+	<header class="header container">
+		<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
+		<div class="header__title">
+			<h1>Veronika Bogdan</h1>
+			<h2>Front-End Developer</h2>
+		</div>
+		<!-- <nav></nav> -->
+	</header>
+	<!-- /.header -->
+	<main class="container">
+		<article>
+			<section>
+			  <h3>About Me</h3>
+				<p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
+				<p>Every week or every day I try to learn something new even in the summer.  </p>
+				<p>In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  </p>
+				<p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
+			</section>
+			<section>
+				<h3>Code Example</h3>
+				<pre>
+					function reverseWords(str) {
+						const arrWords = str.split(" "); 
+						
+						str = '';
+						let count = 1;
+						
+						for(let word of arrWords){
+							const arrLetters = word.split("").reverse().join("");
+							
+							if(count &lt; arrWords.length){    
+								str += arrLetters + " ";
+								count++;
+							} else {
+								str += arrLetters;
+							}
+						}					
+						return str;
+					}
+				</pre>
+			</section>
+		</article>
+		<aside class="sidebar" style="flex: 2;">
+			<h3 class="dark__title">Contacts</h3>
+			<ul class="dark">
+				<li>Minsk, Belarus</li>
+				<li><a href="tel:+375(29)5623235">+375(29)5623235</a></li>
+				<li><a href="mailto:veron9399bogdan@gmail.com">veron9399bogdan@gmail.com</a></li>
+				<li><a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a></li>
+			</ul>
+			<h3 class="dark__title">Skills</h3>
+			<ul class="dark">
+				<li>HTML&CSS</li>
+				<li>JS</li>
+				<li>C++</li>
+				<li>Git</li>
+				<li>Figma</li>
+			</ul>
+			<h3 class="dark__title">English</h3>
+			<p class="dark">A2</p>
+
+		</aside>
+		<!-- /.sidebar -->
+	</main>
 </body>
 </html>
