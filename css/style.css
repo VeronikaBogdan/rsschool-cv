@@ -19,7 +19,6 @@
 	src: url('../fonts/Roboto-Medium.ttf');
 }
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -29,7 +28,7 @@
 
 h1 {
 	font-family: Roboto-Black;
-	font-size: 70px;
+	font-size: 75px;
 	color:#fff;
 	margin: 60px 0 20px 0;
 }
@@ -74,12 +73,14 @@ a:hover, a:focus {
 }
 
 .header{
-	/* position: relative;
-	top: 100px; */
-	/*! z-index: 2; */
 	display: flex;
 	background-color: #3FC600;
-	
+	font-family: Roboto-Regular;
+}
+
+#navbar {
+	display: flex;
+	justify-content:space-around;
 }
 
 .header__title {
@@ -91,15 +92,15 @@ a:hover, a:focus {
 
 main{
 	display: flex;
-	/* position:relative;
-	bottom: 150px; */
-	/* z-index: 1; */
-	/* margin-top: 300px; */
 }
 
 article {
 	flex: 4;
 	padding-right: 50px;
+}
+
+article h4 {
+	margin-bottom: 20px;
 }
 
 p#task {
@@ -108,20 +109,15 @@ p#task {
 	padding-left: 15px;
 }
 
-section.project {
-	display: flex;
-}
-
 section.project a {
+	display: flex;
 	color: #000;
 	transition: color 0.5s ease;
 }
 
 section.project a:hover {
-	display: flex;
 	color:#4AC900;
 }
-
 
 .project{
 	margin-bottom: 35px;
@@ -130,7 +126,6 @@ section.project a:hover {
 .project__info {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
 	margin-left: 20px;
 }
 
@@ -138,18 +133,9 @@ section.project a:hover {
 	margin-top: 20px;
 }
 
-article:first-child, 
-aside:first-child {
-	/* padding-top: 270px; */
-  
-}
-
 .sidebar{
 	flex: 1;
 	background-color: #29282B;
-}
-.sidebar:first-child{
-	/* padding-top: 270px; */
 }
 
 .sidebar > ul {

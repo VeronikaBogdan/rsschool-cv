@@ -8,33 +8,32 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-	<base target="_blank">
 </head>
 <body>
-	<header class="header container">
-		<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
-		<div class="header__title">
-			<h1>Veronika Bogdan</h1>
-			<h2>Front-End Developer</h2>
+	<header class="container">
+		<div class="header">
+			<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
+			<div class="header__title">
+				<h1>Veronika Bogdan</h1>
+				<h2>Front-End Developer</h2>
+			</div>
 		</div>
-		<!-- <nav></nav> -->
 	</header>
 	<!-- /.header -->
 	<main class="container">
 	<article>
-			<!-- <section> -->
-			  <h3>About Me</h3>
+			  <h3 id="info">About Me</h3>
 				<p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
 				<p>Every week or every day I try to learn something new even in the summer.  </p>
 				<p>In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  </p>
 				<p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
-			<!-- </section> -->
-			<!-- <section> -->
-				<h3>Code Example</h3>
+
+				<h3 id="code">Code Example</h3>
+				<h4><strong>Reverse words</strong></h4>
 				<p id="task">
 					Complete the function that accepts a string parameter, and reverses each word in the string. <strong>All</strong> spaces in the string should be retained
 				</p>
-				<pre id="code">
+				<pre>
 					<code class="javascript">
 function reverseWords(str) {
 	const arrWords = str.split(" "); 
@@ -56,62 +55,47 @@ function reverseWords(str) {
 }
 					</code>
 				</pre>
-			<!-- </section> -->
-			<h3>My Projects</h3>
+			<h3 id="MyProjects">My Projects</h3>
 			<section class="project">
-				<a href="https://veronikabogdan.github.io/BoonMarket/">
+				<a href="https://veronikabogdan.github.io/BoonMarket/" target="_blank">
 					<img src="img/BoonMarket.png" width="300" title="Boon Market" alt="photo: Boon Market">
-				</a>
 					<div class="project__info">
-						<a href="https://veronikabogdan.github.io/BoonMarket/">
-							<h4>Boon Market</h4>
-						</a>
-						<a href="https://veronikabogdan.github.io/BoonMarket/">
-							<p>Landing page for Shop Goods. Summer layout practice. HTML & CSS were used in the project.</p>
-						</a>
+						<h4>Boon Market</h4>
+						<p>Landing page for Shop Goods. Summer layout practice. HTML & CSS were used in the project.</p>
 					</div>
+				</a>
 			</section>
 			<section class="project">
-				<a href="https://bitbucket.org/VeronikaBogdan/museum-service/src/master/">
+				<a href="https://bitbucket.org/VeronikaBogdan/museum-service/src/master/" target="_blank">
 					<img src="img/dino.png" width="300" title="Museum Service" alt="photo: dinosausrs' museum">
-				</a>
 					<div class="project__info">
-						<a href="https://bitbucket.org/VeronikaBogdan/museum-service/src/master/">
-							<h4>Museum Service</h4>
-						</a>
-						<a href="https://bitbucket.org/VeronikaBogdan/museum-service/src/master/">
-							<p>Team project at the university. Web-service (web-site) for Museum of dinosausrs.
-								HTML, CSS, JS, React, TypeScript, Faker, Chance, Swagger were used in the project.
-							</p>
-						</a>
+						<h4>Museum Service</h4>		
+						<p>Team project at the university. Web-service (web-site) for Museum of dinosausrs. HTML, CSS, JS, React, TypeScript, Faker, Chance, Swagger were used in the project.</p>		
 					</div>
+				</a>
 			</section>
 			<section class="project">
-				<a href="https://veronikabogdan.github.io/Intensive-racing/">
+				<a href="https://veronikabogdan.github.io/Intensive-racing/" target="_blank">
 					<img src="img/raceGame.png" width="300" title="Racing Game" alt="photo: Racing Game">
-				</a>
 					<div class="project__info">
-						<a href="https://veronikabogdan.github.io/Intensive-racing/">
-							<h4>Racing Game</h4>
-						</a>
-						<a href="https://veronikabogdan.github.io/Intensive-racing/">
-							<p>Landing page for Shop Goods. Glo Academy intensive about racing game. HTML, CSS and JS were used in the project.</p>
-						</a>
+						<h4>Racing Game</h4>
+						<p> Glo Academy intensive about racing game. HTML, CSS and JS were used in the project.</p>
 					</div>
+				</a>
 			</section>
 		</article>
 		<aside class="sidebar" style="flex: 2;">
 			<h3 class="dark__title">Contacts</h3>
 			<ul class="dark">
-				<li><img src="img/001-pin.png" alt=""> Minsk, Belarus</li>
-				<li><img src="img/003-call.png" alt=""><a href="tel:+375(29)5623235">+375(29)5623235</a></li>
-				<li><img src="img/006-mail.png" alt=""><a href="mailto:veron9399bogdan@gmail.com">veron9399bogdan@gmail.com</a></li>
-				<li><img src="img/002-telegram.png" alt=""><a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a></li>
+				<li><img src="img/location_on_white_24dp.svg" alt=""> Minsk, Belarus</li>
+				<li><img src="img/call_white_24dp.svg" alt=""><a href="tel:+375(29)5623235">+375(29)5623235</a></li>
+				<li><img src="img/email_white_24dp.svg" alt=""><a href="mailto:veron9399bogdan@gmail.com">veron9399bogdan@gmail.com</a></li>
+				<li><img src="img/telegram_white_24dp.svg" alt=""><a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a></li>
 			</ul>
 
 			<h3 class="dark__title">Skills</h3>
 			<ul class="dark">
-				<li>HTML & CSS</li>
+			  <li>HTML & CSS</li>
 				<li>JS</li>
 				<li>C++</li>
 				<li>Git</li>
@@ -127,7 +111,7 @@ function reverseWords(str) {
 			</ul>
 
 			<h3 class="dark__title">English</h3>
-			<p class="dark">A2</p>
+			<p class="dark">A2+</p>
 
 		</aside>
 		<!-- /.sidebar -->
