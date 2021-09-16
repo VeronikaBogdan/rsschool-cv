@@ -8,9 +8,26 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 	<header class="Container">
+
+		<nav class="topnav header" id="myTopnav">
+			<a href="#info">About Me</a>
+			<a href="#contacts">Contacts</a>
+			<a href="#skills">Skills</a>
+			<a href="#education">Education</a>
+			<a href="#code">Code Example</a>
+			<a href="#MyProjects">Projects</a>
+			<a href="javascript:void(0);" class="icon header" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+
+
 		<div class="header">
 			<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
 			<div class="header__title">
@@ -85,7 +102,7 @@ function reverseWords(str) {
 			</section>
 		</article>
 		<aside class="sidebar" style="flex: 2;">
-			<h3 class="dark__title">Contacts</h3>
+			<h3 class="dark__title" id="contacts">Contacts</h3>
 			<ul class="dark">
 				<li><img src="img/location_on_white_24dp.svg" alt=""> Minsk, Belarus</li>
 				<li><img src="img/call_white_24dp.svg" alt=""><a href="tel:+375(29)5623235">+375(29)5623235</a></li>
@@ -93,7 +110,7 @@ function reverseWords(str) {
 				<li><img src="img/telegram_white_24dp.svg" alt=""><a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a></li>
 			</ul>
 
-			<h3 class="dark__title">Skills</h3>
+			<h3 class="dark__title" id="skills">Skills</h3>
 			<ul class="dark">
 			  <li>HTML & CSS</li>
 				<li>JS</li>
@@ -102,7 +119,7 @@ function reverseWords(str) {
 				<li>Figma</li>
 			</ul>
 
-			<h3 class="dark__title">Education</h3>
+			<h3 class="dark__title" id="education">Education</h3>
 			<ul class="dark">
 				<li>Minsk State Regional Liceum</li>
 				<li>BSU: Faculty of Mechanics and Mathematics</li>
@@ -127,5 +144,6 @@ function reverseWords(str) {
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="script.js"></script>
 </body>
 </html>
