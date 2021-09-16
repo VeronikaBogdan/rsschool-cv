@@ -7,20 +7,10 @@
 	<title>CV Veronika Bogdan</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"> -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 </head>
 <body>
 	<header class="Container">
-		<nav class="header">
-			<ul id="navbar">
-				<li><a href="#info">About Me</a></li>
-				<li>Contacts</li>
-				<li>Skills</li>
-				<li>Education</li>
-				<li><a href="#code">Code Example</a></li>
-				<li><a href="#MyProjects">Projects</a></li>
-			</ul>
-		</nav>
 		<div class="header">
 			<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
 			<div class="header__title">
@@ -31,20 +21,20 @@
 	</header>
 	<!-- /.header -->
 	<main class="Container">
-		<article>
-			<h3 id="info">About Me</h3>
-			<p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
-			<p>Every week or every day I try to learn something new even in the summer.  </p>
-			<p>In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  </p>
-			<p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
+	<article>
+			  <h3 id="info">About Me</h3>
+				<p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
+				<p>Every week or every day I try to learn something new even in the summer.  </p>
+				<p>In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  </p>
+				<p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
 
-			<h3 id="code">Code Example</h3>
-			<h4><strong>Reverse words</strong></h4>
-			<p id="task">
-				Complete the function that accepts a string parameter, and reverses each word in the string. <strong>All</strong> spaces in the string should be retained
-			</p>
-			<pre>
-				<code class="javascript">
+				<h3 id="code">Code Example</h3>
+				<h4><strong>Reverse words</strong></h4>
+				<p id="task">
+					Complete the function that accepts a string parameter, and reverses each word in the string. <strong>All</strong> spaces in the string should be retained
+				</p>
+				<pre>
+					<code class="javascript">
 function reverseWords(str) {
 	const arrWords = str.split(" "); 
 	
@@ -63,8 +53,8 @@ function reverseWords(str) {
 	}					
 	return str;
 }
-				</code>
-			</pre>
+					</code>
+				</pre>
 			<h3 id="MyProjects">My Projects</h3>
 			<section class="project">
 				<a href="https://veronikabogdan.github.io/BoonMarket/" target="_blank">
@@ -105,7 +95,7 @@ function reverseWords(str) {
 
 			<h3 class="dark__title">Skills</h3>
 			<ul class="dark">
-				<li>HTML & CSS</li>
+			  <li>HTML & CSS</li>
 				<li>JS</li>
 				<li>C++</li>
 				<li>Git</li>
@@ -135,8 +125,7 @@ function reverseWords(str) {
 	</footer>
 	<!-- /#footer -->
 
-	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script> -->
-	<!-- <script>hljs.initHighlightingOnLoad();</script> -->
-	<!-- <script src="script.js"></script> -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
