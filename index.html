@@ -8,19 +8,35 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 	<header class="container">
+		<div class="topnav">
+			<a href="javascript:void(0);" class="icon header" onclick="myFunction()">
+				<i class="fa fa-bars" id="button"></i>
+			</a>
+		</div>
+		<nav class="topnav header" id="myTopnav">
+			<a href="#info">About Me</a>
+			<a href="#contacts">Contacts</a>
+			<a href="#skills">Skills</a>
+			<a href="#education">Education</a>
+			<a href="#code">Code Example</a>
+			<a href="#MyProjects">Projects</a>
+		</nav>
 		<div class="header">
 			<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
-			<div class="header__title">
+			<div class="header__title ">
 				<h1>Veronika Bogdan</h1>
 				<h2>Front-End Developer</h2>
 			</div>
 		</div>
 	</header>
 	<!-- /.header -->
-	<main class="container">
+	<main class="container wrap">
 	<article>
 			  <h3 id="info">About Me</h3>
 				<p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
@@ -29,7 +45,9 @@
 				<p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
 
 				<h3 id="code">Code Example</h3>
-				<h4><strong>Reverse words</strong></h4>
+				<h4>
+					<strong>Reverse words</strong>
+				</h4>
 				<p id="task">
 					Complete the function that accepts a string parameter, and reverses each word in the string. <strong>All</strong> spaces in the string should be retained
 				</p>
@@ -58,7 +76,7 @@ function reverseWords(str) {
 			<h3 id="MyProjects">My Projects</h3>
 			<section class="project">
 				<a href="https://veronikabogdan.github.io/BoonMarket/" target="_blank">
-					<img src="img/BoonMarket.png" width="300" title="Boon Market" alt="photo: Boon Market">
+					<img src="img/BoonMarket.png" width="300" class="img" title="Boon Market" alt="photo: Boon Market">
 					<div class="project__info">
 						<h4>Boon Market</h4>
 						<p>Landing page for Shop Goods. Summer layout practice. HTML & CSS were used in the project.</p>
@@ -67,7 +85,7 @@ function reverseWords(str) {
 			</section>
 			<section class="project">
 				<a href="https://bitbucket.org/VeronikaBogdan/museum-service/src/master/" target="_blank">
-					<img src="img/dino.png" width="300" title="Museum Service" alt="photo: dinosausrs' museum">
+					<img src="img/dino.png" width="300" class="img" title="Museum Service" alt="photo: dinosausrs' museum">
 					<div class="project__info">
 						<h4>Museum Service</h4>		
 						<p>Team project at the university. Web-service (web-site) for Museum of dinosausrs. HTML, CSS, JS, React, TypeScript, Faker, Chance, Swagger were used in the project.</p>		
@@ -76,7 +94,7 @@ function reverseWords(str) {
 			</section>
 			<section class="project">
 				<a href="https://veronikabogdan.github.io/Intensive-racing/" target="_blank">
-					<img src="img/raceGame.png" width="300" title="Racing Game" alt="photo: Racing Game">
+					<img src="img/raceGame.png" width="300"  class="img" title="Racing Game" alt="photo: Racing Game">
 					<div class="project__info">
 						<h4>Racing Game</h4>
 						<p> Glo Academy intensive about racing game. HTML, CSS and JS were used in the project.</p>
@@ -85,15 +103,24 @@ function reverseWords(str) {
 			</section>
 		</article>
 		<aside class="sidebar" style="flex: 2;">
-			<h3 class="dark__title">Contacts</h3>
+			<h3 class="dark__title" id="contacts">Contacts</h3>
 			<ul class="dark">
 				<li><img src="img/location_on_white_24dp.svg" alt=""> Minsk, Belarus</li>
-				<li><img src="img/call_white_24dp.svg" alt=""><a href="tel:+375(29)5623235">+375(29)5623235</a></li>
-				<li><img src="img/email_white_24dp.svg" alt=""><a href="mailto:veron9399bogdan@gmail.com">veron9399bogdan@gmail.com</a></li>
-				<li><img src="img/telegram_white_24dp.svg" alt=""><a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a></li>
+				<li>
+					<img src="img/call_white_24dp.svg" alt="">
+					<a href="tel:+375(29)5623235">+375(29)5623235</a>
+				</li>
+				<li>
+					<img src="img/email_white_24dp.svg" alt="">
+					<a href="mailto:veron9399bogdan@gmail.com">veron9399bogdan@gmail.com</a>
+				</li>
+				<li>
+					<img src="img/telegram_white_24dp.svg" alt="">
+					<a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a>
+				</li>
 			</ul>
 
-			<h3 class="dark__title">Skills</h3>
+			<h3 class="dark__title" id="skills">Skills</h3>
 			<ul class="dark">
 			  <li>HTML & CSS</li>
 				<li>JS</li>
@@ -102,7 +129,7 @@ function reverseWords(str) {
 				<li>Figma</li>
 			</ul>
 
-			<h3 class="dark__title">Education</h3>
+			<h3 class="dark__title" id="education">Education</h3>
 			<ul class="dark">
 				<li>Minsk State Regional Liceum</li>
 				<li>BSU: Faculty of Mechanics and Mathematics</li>
@@ -119,13 +146,20 @@ function reverseWords(str) {
 	<footer>
 		<ul id="footer" class="container">
 			<li>2021</li>
-			<li><a href="https://github.com/VeronikaBogdan">GitHub</a></li>
-			<li><a href="https://rs.school/js/"><img src="img/logo.svg" width="150" alt="photo: logo"></a></li>
+			<li>
+				<a href="https://github.com/VeronikaBogdan">GitHub</a>
+			</li>
+			<li>
+				<a href="https://rs.school/js/">
+					<img src="img/logo.svg" width="150" id="logo" alt="photo: logo">
+				</a>
+			</li>
 		</ul>
 	</footer>
 	<!-- /#footer -->
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="script.js"></script>
 </body>
 </html>
