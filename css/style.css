@@ -264,12 +264,12 @@ footer ul#footer a:hover {
 
 @media (max-width: 992px) {
 	:root {
-		--h1: 45px;
-		--h2: 25px;
-		--h3: 20px;
-		--h4: 18px;
-		--p: 14px;
-		--code: 12px;
+		--h1: 49px;
+		--h2: 28px;
+		--h3: 24px;
+		--h4: 22px;
+		--p: 15px;
+		--code: 13px;
 	} 
 	.container {
 		max-width: 740px;
@@ -308,12 +308,12 @@ footer ul#footer a:hover {
 
 @media (max-width: 768px) { 
 	:root {
-		--h1: 27px;
-		--h2: 20px;
-		--h3: 17px;
-		--h4: 14px;
-		--p: 12px;
-		--code: 11px;
+		--h1: 33px;
+		--h2: 22px;
+		--h3: 19px;
+		--h4: 17px;
+		--p: 15px;
+		--code: 13px;
 	} 
 	.container {
 		max-width: 560px;
@@ -379,21 +379,18 @@ footer ul#footer a:hover {
 
 @media (max-width: 576px) {
 	:root {
-		--h1: 34px;
-		--h2: 20px;
-		--h3: 19.5px;
-		--h4: 18px;
-		--p: 16px;
-		--code: 10px;
+		--h1: 39px;
+		--h2: 27px;
+		--h3: 24px;
+		--h4: 22px;
+		--p: 19px;
+		--code: 13px;
 	} 
-	.container {
-		max-width: 90%;
-	}
 	.header{
 		max-width: 100%;
 		flex-direction: column;
 	}
-	.header > img {
+	.header img {
 		max-width: 100%;
 		height: 100%;
 		align-self: center;
@@ -419,22 +416,20 @@ footer ul#footer a:hover {
 	section.project {
 		margin-bottom: 15px;
 	}
-	#footer {
-		max-width: 90%;
+	body {
+		position: absolute;
+	}
+	main.container article {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+	#logo {
+		width: 100px;
 	}
 }
 
-@media (max-width: 320px) {
-	:root {
-		--h1: 27px;
-		--h2: 17px;
-		--h3: 17px;
-		--h4: 14px;
-		--p: 16px;
-		--code: 10px;
-	} 
-
-	#logo {
-		width: 100px;
+@media (max-width: 140px) {
+	body{
+		position: relative;
 	}
 }
