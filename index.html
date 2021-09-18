@@ -14,7 +14,11 @@
 </head>
 <body>
 	<header class="container">
-
+		<div class="topnav">
+			<a href="javascript:void(0);" class="icon header" onclick="myFunction()">
+				<i class="fa fa-bars" id="button"></i>
+			</a>
+		</div>
 		<nav class="topnav header" id="myTopnav">
 			<a href="#info">About Me</a>
 			<a href="#contacts">Contacts</a>
@@ -26,16 +30,9 @@
 				<i class="fa fa-bars" id="button"></i>
 			</a> -->
 		</nav>
-		
-
 		<div class="header">
 			<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
 			<div class="header__title ">
-				<div class="topnav">
-					<a href="javascript:void(0);" class="icon header" onclick="myFunction()">
-						<i class="fa fa-bars" id="button"></i>
-					</a>
-				</div>
 				<h1>Veronika Bogdan</h1>
 				<h2>Front-End Developer</h2>
 			</div>
@@ -152,8 +149,14 @@ function reverseWords(str) {
 	<footer>
 		<ul id="footer" class="container">
 			<li>2021</li>
-			<li><a href="https://github.com/VeronikaBogdan">GitHub</a></li>
-			<li><a href="https://rs.school/js/"><img src="img/logo.svg" width="150" alt="photo: logo"></a></li>
+			<li>
+				<a href="https://github.com/VeronikaBogdan">GitHub</a>
+			</li>
+			<li>
+				<a href="https://rs.school/js/">
+					<img src="img/logo.svg" width="150" id="logo" alt="photo: logo">
+				</a>
+			</li>
 		</ul>
 	</footer>
 	<!-- /#footer -->
