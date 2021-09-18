@@ -42,13 +42,14 @@ html {
 h1 {
 	font-family: Roboto-Black;
 	font-size: var(--h1);
-	color:#fff;
+	color:#29282B;
 	margin: 60px 0 20px 0;
 }
 
 h2{
 	font-family: Roboto-Light;
 	font-size: var(--h2);
+	color: #29282B;
 }
 
 h3{
@@ -73,7 +74,7 @@ p {
 }
 
 a {
-	color:#F7FFEA;
+	color:/*#29282B*/ #F7FFEA ;
 	transition: color 0.5s ease;
 }
 a:hover, a:focus {
@@ -96,11 +97,11 @@ a:hover, a:focus {
 	display: flex;
 	justify-content:space-between;
 	font-family: Roboto-Regular;
-
+	background-color: #29282B;
 }
 
 .topnav a {
-	color: #f2f2f2;
+	color: #3FC600;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -111,6 +112,10 @@ a:hover, a:focus {
 .topnav a:hover {
 	background-color: #ddd;
 	color: #29282B;
+}
+
+.topnav a.icon:hover {
+	color: #3FC600;
 }
 
 .active {
@@ -220,11 +225,14 @@ footer ul#footer {
 	background-color: #4AC900;
 	font-family: Roboto-Regular;
 	font-size: var(--h4);
-	color:#fff;
+	color:#29282B;
 }
 
-footer ul#footer a:hover {
+footer ul#footer a {
 	color: #29282B;
+}
+footer ul#footer a:hover {
+	color: #F7FFEA;
 }
 
 
@@ -256,12 +264,12 @@ footer ul#footer a:hover {
 
 @media (max-width: 992px) {
 	:root {
-		--h1: 45px;
-		--h2: 25px;
-		--h3: 20px;
-		--h4: 18px;
-		--p: 14px;
-		--code: 12px;
+		--h1: 49px;
+		--h2: 28px;
+		--h3: 24px;
+		--h4: 22px;
+		--p: 15px;
+		--code: 13px;
 	} 
 	.container {
 		max-width: 740px;
@@ -300,12 +308,12 @@ footer ul#footer a:hover {
 
 @media (max-width: 768px) { 
 	:root {
-		--h1: 27px;
-		--h2: 20px;
-		--h3: 17px;
-		--h4: 14px;
-		--p: 12px;
-		--code: 11px;
+		--h1: 33px;
+		--h2: 22px;
+		--h3: 19px;
+		--h4: 17px;
+		--p: 15px;
+		--code: 13px;
 	} 
 	.container {
 		max-width: 560px;
@@ -341,7 +349,7 @@ footer ul#footer a:hover {
 		height: 18px;
 	}
 	.topnav {
-		background-color: #3FC600;
+		background-color: #29282B;
 	}
 	.topnav a:first-child {
 		display: none;
@@ -351,7 +359,7 @@ footer ul#footer a:hover {
 	}
   .topnav a.icon {
 		display: block; 
-		background-color: #3FC600;
+		background-color: #29282B;
   }
 	nav {
 		background-color: #4AC900;
@@ -360,7 +368,7 @@ footer ul#footer a:hover {
 		position: relative;
 		display: flex;
     flex-direction: column;
-		background-color: #4AC900;
+		background-color: #29282B;
 	}
   .topnav.responsive a {
     float: none;
@@ -371,21 +379,18 @@ footer ul#footer a:hover {
 
 @media (max-width: 576px) {
 	:root {
-		--h1: 34px;
-		--h2: 20px;
-		--h3: 19.5px;
-		--h4: 18px;
-		--p: 16px;
-		--code: 10px;
+		--h1: 39px;
+		--h2: 27px;
+		--h3: 24px;
+		--h4: 22px;
+		--p: 19px;
+		--code: 13px;
 	} 
-	.container {
-		max-width: 90%;
-	}
 	.header{
 		max-width: 100%;
 		flex-direction: column;
 	}
-	.header > img {
+	.header img {
 		max-width: 100%;
 		height: 100%;
 		align-self: center;
@@ -411,22 +416,20 @@ footer ul#footer a:hover {
 	section.project {
 		margin-bottom: 15px;
 	}
-	#footer {
-		max-width: 90%;
+	body {
+		position: absolute;
+	}
+	main.container article {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+	#logo {
+		width: 100px;
 	}
 }
 
-@media (max-width: 320px) {
-	:root {
-		--h1: 27px;
-		--h2: 17px;
-		--h3: 17px;
-		--h4: 14px;
-		--p: 16px;
-		--code: 10px;
-	} 
-
-	#logo {
-		width: 100px;
+@media (max-width: 140px) {
+	body{
+		position: relative;
 	}
 }
