@@ -313,7 +313,7 @@ footer ul#footer a:hover {
 		--h3: 19px;
 		--h4: 17px;
 		--p: 15px;
-		--code: 13px;
+		--code: 11px;
 	} 
 	.container {
 		max-width: 560px;
@@ -384,7 +384,7 @@ footer ul#footer a:hover {
 		--h3: 24px;
 		--h4: 22px;
 		--p: 19px;
-		--code: 13px;
+		--code: 8px;
 	} 
 	.header{
 		max-width: 100%;
@@ -417,8 +417,24 @@ footer ul#footer a:hover {
 		margin-bottom: 15px;
 	}
 	body {
-		position: absolute;
+		/* position: absolute; */
 	}
+	/* main.container article {
+		max-width: 100%;
+		padding: 0 20px;
+	} */
+	img.img {
+		width: 90%;
+	}
+	p{
+		max-width: 90%;
+	}
+	#email {
+		font-size: 15px;
+	}
+
+	#footer, 
+	.header, 
 	main.container article {
 		max-width: 100%;
 		padding: 0 20px;
