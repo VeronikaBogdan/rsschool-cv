@@ -416,6 +416,9 @@ footer ul#footer a:hover {
 	section.project {
 		margin-bottom: 15px;
 	}
+	img.img {
+		width: 90%;
+	}
 	p{
 		max-width: 90%;
 	}
@@ -423,7 +426,7 @@ footer ul#footer a:hover {
 		font-size: 15px;
 	}
 	body{
-		position: absolute;
+		position: relative;
 	}
 
 	#footer, 
