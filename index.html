@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CV Veronika Bogdan</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Veronika Bogdan</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <script>hljs.initHighlightingOnLoad();</script> -->
 
-</head>
-<body>
-	<header class="container">
-		<div class="topnav">
-			<a href="javascript:void(0);" class="icon header" onclick="myFunction()">
-				<i class="fa fa-bars" id="button"></i>
-			</a>
-		</div>
-		<nav class="topnav header" id="myTopnav">
-			<a href="#info">About Me</a>
-			<a href="#contacts">Contacts</a>
-			<a href="#skills">Skills</a>
-			<a href="#education">Education</a>
-			<a href="#code">Code Example</a>
-			<a href="#MyProjects">Projects</a>
-		</nav>
-		<div class="header">
-			<img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan">
-			<div class="header__title ">
-				<h1>Veronika Bogdan</h1>
-				<h2>Front-End Developer</h2>
-			</div>
-		</div>
-	</header>
-	<!-- /.header -->
-	<main class="container wrap">
-	<article>
-			  <h3 id="info">About Me</h3>
-				<p>I'm a second-year student of Faculty of Mechanics and Mathematics of BSU. I enjoy mathematics, do different sums and love algorithms therefore nowadays I study in the 2nd course at this faculty. </p>
-				<p>Every week or every day I try to learn something new even in the summer.  </p>
-				<p>In the first course I learn how to work with my groupmates on different projects connected with creation web-sites. I'm interested in it. I want to be a part of this exiting process in real life.  </p>
-				<p>And now I want to train more in order to be a full-fledged and competent part of the team in the future.</p>
+    <meta name="yandex-verification" content="f89797e691f93598" />
+  </head>
 
-				<h3 id="code">Code Example</h3>
-				<h4>
-					<strong>Reverse words</strong>
-				</h4>
-				<p id="task">
-					Complete the function that accepts a string parameter, and reverses each word in the string. <strong>All</strong> spaces in the string should be retained
-				</p>
-				<pre>
+  <body>
+    <header class="container">
+      <div class="topnav">
+        <a
+          href="javascript:void(0);"
+          class="icon header"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars" id="button"></i>
+        </a>
+      </div>
+      <nav class="topnav header" id="myTopnav">
+        <a href="#info">About Me</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#code">Code Example</a>
+        <a href="#MyProjects">Projects</a>
+      </nav>
+      <div class="header">
+        <img src="img/my_photo.png" height="300" alt="photo: Veronika Bogdan" />
+        <div class="header__title">
+          <h1>Veronika Bogdan</h1>
+          <h2>Front-End Developer</h2>
+        </div>
+      </div>
+    </header>
+    <main class="container wrap">
+      <article>
+        <h3 id="info">About Me</h3>
+        <p>
+          I'm a second-year student of Faculty of Mechanics and Mathematics of
+          BSU. I enjoy mathematics, do different sums and love algorithms
+          therefore nowadays I study in the 2nd course at this faculty.
+        </p>
+        <p>
+          Every week or every day I try to learn something new even in the
+          summer.
+        </p>
+        <p>
+          In the first course I learn how to work with my groupmates on
+          different projects connected with creation web-sites. I'm interested
+          in it. I want to be a part of this exiting process in real life.
+        </p>
+        <p>
+          And now I want to train more in order to be a full-fledged and
+          competent part of the team in the future.
+        </p>
+
+        <h3 id="code">Code Example</h3>
+        <h4>
+          <strong>Reverse words</strong>
+        </h4>
+        <p id="task">
+          Complete the function that accepts a string parameter, and reverses
+          each word in the string.
+          <strong>All</strong> spaces in the string should be retained
+        </p>
+        <pre>
 					<code class="javascript">
 function reverseWords(str) {
 	const arrWords = str.split(" "); 
@@ -73,93 +101,220 @@ function reverseWords(str) {
 }
 					</code>
 				</pre>
-			<h3 id="MyProjects">My Projects</h3>
-			<section class="project">
-				<a href="https://veronikabogdan.github.io/BoonMarket/" target="_blank">
-					<img src="img/BoonMarket.png" width="300" class="img" title="Boon Market" alt="photo: Boon Market">
-					<div class="project__info">
-						<h4>Boon Market</h4>
-						<p>Landing page for Shop Goods. Summer layout practice. HTML & CSS were used in the project.</p>
-					</div>
-				</a>
-			</section>
-			<section class="project">
-				<a href="https://bitbucket.org/VeronikaBogdan/museum-service/src/master/" target="_blank">
-					<img src="img/dino.png" width="300" class="img" title="Museum Service" alt="photo: dinosausrs' museum">
-					<div class="project__info">
-						<h4>Museum Service</h4>		
-						<p>Team project at the university. Web-service (web-site) for Museum of dinosausrs. HTML, CSS, JS, React, TypeScript, Faker, Chance, Swagger were used in the project.</p>		
-					</div>
-				</a>
-			</section>
-			<section class="project">
-				<a href="https://veronikabogdan.github.io/Intensive-racing/" target="_blank">
-					<img src="img/raceGame.png" width="300"  class="img" title="Racing Game" alt="photo: Racing Game">
-					<div class="project__info">
-						<h4>Racing Game</h4>
-						<p> Glo Academy intensive about racing game. HTML, CSS and JS were used in the project.</p>
-					</div>
-				</a>
-			</section>
-		</article>
-		<aside class="sidebar" style="flex: 2;">
-			<h3 class="dark__title" id="contacts">Contacts</h3>
-			<ul class="dark">
-				<li><img src="img/location_on_white_24dp.svg" alt=""> Minsk, Belarus</li>
-				<li>
-					<img src="img/call_white_24dp.svg" alt="">
-					<a href="tel:+375(29)5623235">+375(29)5623235</a>
-				</li>
-				<li>
-					<img src="img/email_white_24dp.svg" alt="">
-					<a href="mailto:veron9399bogdan@gmail.com" id="email">veron9399bogdan@gmail.com</a>
-				</li>
-				<li>
-					<img src="img/telegram_white_24dp.svg" alt="">
-					<a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a>
-				</li>
-			</ul>
+        <h3 id="MyProjects">My Projects</h3>
+        <section class="project">
+          <a
+            href="https://veronikabogdan.github.io/Intensive-racing/"
+            target="_blank"
+          >
+            <img
+              src="img/art_quiz_homescreen.jpg"
+              width="100"
+              class="img"
+              title="Racing Game"
+              alt="photo: Racing Game"
+            />
+            <img
+              src="img/art_quiz_categoriesscreen.jpg"
+              width="100"
+              class="img"
+              title="Racing Game"
+              alt="photo: Racing Game"
+            />
+            <img
+              src="img/art_quiz_questionsscreen.jpg"
+              width="100"
+              class="img"
+              title="Racing Game"
+              alt="photo: Racing Game"
+            />
+            <div class="project__info">
+              <h4>Art Quiz</h4>
+              <p>
+                Art Quiz is a quiz application for the knowledge of masterpieces
+                of painting and their authors. <strong>React Native</strong>,
+                Expo and Cloud Firebase were used in the project.
+              </p>
+              <p>
+                Attention! To open and play this application, you need to
+                download and install the Expo Go application on your mobile
+                phone, and then scan the QR code
+              </p>
+            </div>
+          </a>
+        </section>
+        <section class="project">
+          <a
+            href="https://rolling-scopes-school.github.io/veronikabogdan-JSFE2021Q3/momentum/"
+            target="_blank"
+          >
+            <img
+              src="img/momentum.jpg"
+              width="300"
+              class="img"
+              title="Momentum"
+              alt="photo: Momentum"
+            />
+            <div class="project__info">
+              <h4>Momentum</h4>
+              <p>
+                Momentum is an analog of the Chrome online store application of
+                the same name. The background image and greeting change
+                depending on the time of day. Local storage is used to store the
+                user name and the locality.
+              </p>
+            </div>
+          </a>
+        </section>
+        <section class="project">
+          <a
+            href="https://veronikabogdan.github.io/cssMemSlider/cssMemSlider/"
+            target="_blank"
+          >
+            <img
+              src="img/cssMemSlider.png"
+              width="300"
+              class="img"
+              title="Mem Slider"
+              alt="photo: Mem Slider"
+            />
+            <div class="project__info">
+              <h4>Mem Slider</h4>
+              <p>
+                Mem Slider is a slider of different mems written using HTML and
+                CSS only (withour JS or others).
+              </p>
+            </div>
+          </a>
+        </section>
+        <section class="project">
+          <a
+            href="https://veronikabogdan.github.io/Intensive-racing/"
+            target="_blank"
+          >
+            <img
+              src="img/raceGame.png"
+              width="300"
+              class="img"
+              title="Racing Game"
+              alt="photo: Racing Game"
+            />
+            <div class="project__info">
+              <h4>Racing Game</h4>
+              <p>
+                Glo Academy intensive about racing game. HTML, CSS and JS were
+                used in the project.
+              </p>
+            </div>
+          </a>
+        </section>
+        <section class="project">
+          <a
+            href="https://veronikabogdan.github.io/BoonMarket/"
+            target="_blank"
+          >
+            <img
+              src="img/BoonMarket.png"
+              width="300"
+              class="img"
+              title="Boon Market"
+              alt="photo: Boon Market"
+            />
+            <div class="project__info">
+              <h4>Boon Market</h4>
+              <p>
+                Landing page for Shop Goods. Summer layout practice. HTML & CSS
+                were used in the project.
+              </p>
+            </div>
+          </a>
+        </section>
+        <section class="project">
+          <a
+            href="https://bitbucket.org/VeronikaBogdan/museum-service/src/master/"
+            target="_blank"
+          >
+            <img
+              src="img/dino.png"
+              width="300"
+              class="img"
+              title="Museum Service"
+              alt="photo: dinosausrs' museum"
+            />
+            <div class="project__info">
+              <h4>Museum Service</h4>
+              <p>
+                Team project at the university. Web-service (web-site) for
+                Museum of dinosausrs. HTML, CSS, JS, React, TypeScript, Faker,
+                Chance, Swagger were used in the project.
+              </p>
+            </div>
+          </a>
+        </section>
+      </article>
+      <aside class="sidebar" style="flex: 2">
+        <h3 class="dark__title" id="contacts">Contacts</h3>
+        <ul class="dark">
+          <li>
+            <img src="img/location_on_white_24dp.svg" alt="" /> Minsk, Belarus
+          </li>
+          <li>
+            <img src="img/call_white_24dp.svg" alt="" />
+            <a href="tel:+375(29)5623235">+375(29)5623235</a>
+          </li>
+          <li>
+            <img src="img/email_white_24dp.svg" alt="" />
+            <a href="mailto:veron9399bogdan@gmail.com" id="email"
+              >veron9399bogdan@gmail.com</a
+            >
+          </li>
+          <li>
+            <img src="img/telegram_white_24dp.svg" alt="" />
+            <a href="https://t.me/VeronikaBogdan">@VeronikaBogdan</a>
+          </li>
+        </ul>
 
-			<h3 class="dark__title" id="skills">Skills</h3>
-			<ul class="dark">
-			  <li>HTML & CSS</li>
-				<li>JS</li>
-				<li>C++</li>
-				<li>Git</li>
-				<li>Figma</li>
-			</ul>
+        <h3 class="dark__title" id="skills">Skills</h3>
+        <ul class="dark">
+          <li>HTML & CSS</li>
+          <li>JS</li>
+          <li>React Native</li>
+          <li>C++</li>
+          <li>Git</li>
+          <li>Figma</li>
+        </ul>
 
-			<h3 class="dark__title" id="education">Education</h3>
-			<ul class="dark">
-				<li>Minsk State Regional Liceum</li>
-				<li>BSU: Faculty of Mechanics and Mathematics</li>
-				<li style="margin-top: 50px;">Courses of Udemy</li>
-				<li>Intensives of Glo Academy</li>
-			</ul>
+        <h3 class="dark__title" id="education">Education</h3>
+        <ul class="dark">
+          <li>Minsk State Regional Liceum</li>
+          <li>BSU: Faculty of Mechanics and Mathematics</li>
+          <li style="margin-top: 50px">Courses of Udemy</li>
+          <li>Intensives of Glo Academy</li>
+          <li>RSS: JS</li>
+        </ul>
 
-			<h3 class="dark__title">English</h3>
-			<p class="dark">A2+</p>
+        <h3 class="dark__title">English</h3>
+        <p class="dark">A2+</p>
+      </aside>
+    </main>
+    <footer>
+      <ul id="footer" class="container">
+        <li>2021</li>
+        <li>
+          <a href="https://github.com/VeronikaBogdan">GitHub</a>
+        </li>
+        <li>
+          <a href="https://rs.school/js/">
+            <img src="img/logo.svg" width="150" id="logo" alt="photo: logo" />
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-		</aside>
-		<!-- /.sidebar -->
-	</main>
-	<footer>
-		<ul id="footer" class="container">
-			<li>2021</li>
-			<li>
-				<a href="https://github.com/VeronikaBogdan">GitHub</a>
-			</li>
-			<li>
-				<a href="https://rs.school/js/">
-					<img src="img/logo.svg" width="150" id="logo" alt="photo: logo">
-				</a>
-			</li>
-		</ul>
-	</footer>
-	<!-- /#footer -->
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
-	<script src="script.js"></script>
-</body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
