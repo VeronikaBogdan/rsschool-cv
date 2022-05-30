@@ -431,7 +431,7 @@ footer ul#footer a:hover {
   .header,
   main.container article {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 5px 20px;
   }
   #logo {
     width: 100px;
