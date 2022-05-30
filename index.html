@@ -37,7 +37,6 @@
         <a href="#contacts">Contacts</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
-        <a href="#code">Code Example</a>
         <a href="#MyProjects">Projects</a>
       </nav>
       <div class="header">
@@ -69,38 +68,6 @@
           And now I want to train more in order to be a full-fledged and
           competent part of the team in the future.
         </p>
-
-        <h3 id="code">Code Example</h3>
-        <h4>
-          <strong>Reverse words</strong>
-        </h4>
-        <p id="task">
-          Complete the function that accepts a string parameter, and reverses
-          each word in the string.
-          <strong>All</strong> spaces in the string should be retained
-        </p>
-        <pre>
-					<code class="javascript">
-function reverseWords(str) {
-	const arrWords = str.split(" "); 
-	
-	str = '';
-	let count = 1;
-	
-	for(let word of arrWords){
-		const arrLetters = word.split("").reverse().join("");
-		
-		if(count &lt; arrWords.length){    
-			str += arrLetters + " ";
-			count++;
-		} else {
-			str += arrLetters;
-		}
-	}					
-	return str;
-}
-					</code>
-				</pre>
         <h3 id="MyProjects">My Projects</h3>
         <section class="project">
           <a
@@ -277,11 +244,11 @@ function reverseWords(str) {
         <h3 class="dark__title" id="skills">Skills</h3>
         <ul class="dark">
           <li>HTML & CSS</li>
-          <li>JS</li>
+          <li>JavaScript</li>
           <li>React Native</li>
-          <li>C++</li>
-          <li>Git</li>
+          <li>Git & GitHub</li>
           <li>Figma</li>
+          <li>C++, Java basics</li>
         </ul>
 
         <h3 class="dark__title" id="education">Education</h3>
@@ -294,19 +261,14 @@ function reverseWords(str) {
         </ul>
 
         <h3 class="dark__title">English</h3>
-        <p class="dark">A2+</p>
+        <p class="dark">B1</p>
       </aside>
     </main>
     <footer>
       <ul id="footer" class="container">
-        <li>2021</li>
+        <li>2022</li>
         <li>
           <a href="https://github.com/VeronikaBogdan">GitHub</a>
-        </li>
-        <li>
-          <a href="https://rs.school/js/">
-            <img src="img/logo.svg" width="150" id="logo" alt="photo: logo" />
-          </a>
         </li>
       </ul>
     </footer>
