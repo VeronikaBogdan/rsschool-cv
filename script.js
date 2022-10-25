@@ -1,11 +1,9 @@
-'use strict';
+"use strict";
 
 function myFunction() {
   let myTop = document.getElementById("myTopnav");
 
-	if (myTop.className === "topnav header") {
-		myTop.className += " responsive";
-	} else {
-		myTop.className = "topnav header";
-	}
+  myTop.className === "topnav header"
+    ? (myTop.className += " responsive")
+    : (myTop.className = "topnav header");
 }
